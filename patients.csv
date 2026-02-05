@@ -1,0 +1,7 @@
+patient_id,age,bmi,cholesterol,blood_pressure,smoker
+1,45,28.4,220,140,yes
+2,30,22.1,180,120,no
+3,60,31.0,250,150,yes
+4,50,26.5,210,135,no
+5,40,24.0,190,125,no
+6,70,29.8,260,160,yes
