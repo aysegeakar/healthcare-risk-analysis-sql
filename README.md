@@ -17,3 +17,18 @@ The dataset contains simulated patient information including age, cholesterol le
 
 ## Status
 Work in progress.
+
+## Sample Query
+
+```sql
+SELECT
+  patient_id,
+  age,
+  cholesterol,
+  bmi,
+  CASE
+    WHEN age >= 60 OR cholesterol >= 240 OR bmi >= 30 THEN 'High Risk'
+    WHEN age BETWEEN 40 AND 59 THEN 'Medium Risk'
+    ELSE 'Low Risk'
+  END AS risk_category
+FROM patients;
